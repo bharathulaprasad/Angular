@@ -12,6 +12,7 @@ import {Component}   from '@angular/core';
                 
         </ul>
         <img src="{{ imageUrl }}"/>
+        <button class="btn btn-primary">Save</button>
         `
     })
     
