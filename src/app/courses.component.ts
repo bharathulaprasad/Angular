@@ -12,7 +12,7 @@ import {Component}   from '@angular/core';
                 
         </ul>
         <img src="{{ imageUrl }}"/>
-        <button class="btn btn-primary">Save</button>
+        <button [style.backgroundColor]="isActive? 'blue' : 'white'">Save</button>
         `
     })
     
@@ -25,4 +25,5 @@ export class CoursesComponent {
         this.courses= service.getCourses();
     }
     imageUrl = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+    isActive= true;
 }
